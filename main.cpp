@@ -17,7 +17,7 @@ void runSimulation()
     Bfield one(dimension, dimension, dimension);
     Bfield two(dimension, dimension, dimension);
 
-    //magnetic field calculated by the integration of the Biot-Savart Law (dB = uidsr/4pi r^3)
+    //magnetic field calculated by the integration of the Biot-Savart Law (dB = uid(sxr)/4pi r^3)  x-> cross product
     //, where r =P-R, P = center of coil, R = (Rsintheta, 0, -Rcostheta)
     one.calculateBfield(scale, 0.01);
     std::cout<<"Coil 1 simulation done."<<std::endl;
